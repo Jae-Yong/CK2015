@@ -1,0 +1,258 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10286,        249]
+NotebookOptionsPosition[      9973,        233]
+NotebookOutlinePosition[     10312,        248]
+CellTagsIndexPosition[     10269,        245]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"DynamicModule", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"v", "=", "50"}], ",", 
+     RowBox[{"\[Theta]", "=", 
+      FractionBox["Pi", "4"]}]}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Labeled", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Slider", "[", 
+          RowBox[{
+           RowBox[{"Dynamic", "[", "v", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "100"}], "}"}]}], "]"}], ",", 
+         RowBox[{"InputField", "[", 
+          RowBox[{"Dynamic", "[", "v", "]"}], "]"}]}], "}"}], ",", 
+       "\"\<v\>\"", ",", "Left"}], "]"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"Labeled", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Slider", "[", 
+          RowBox[{
+           RowBox[{"Dynamic", "[", "\[Theta]", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", 
+             FractionBox["Pi", "2"]}], "}"}]}], "]"}], ",", 
+         RowBox[{"InputField", "[", 
+          RowBox[{"Dynamic", "[", "\[Theta]", "]"}], "]"}]}], "}"}], ",", 
+       "\"\<\[Theta]\>\"", ",", "Left"}], "]"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"Labeled", "[", 
+      RowBox[{
+       RowBox[{"Dynamic", "[", 
+        RowBox[{"v", " ", 
+         RowBox[{"Cos", "[", "\[Theta]", "]"}]}], "]"}], ",", 
+       "\"\<\!\(\*SubscriptBox[\(v\), \(x\)]\)\>\"", ",", "Left"}], "]"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{"Labeled", "[", 
+      RowBox[{
+       RowBox[{"Dynamic", "[", 
+        RowBox[{"v", " ", 
+         RowBox[{"Sin", "[", "\[Theta]", "]"}]}], "]"}], ",", 
+       "\"\<\!\(\*SubscriptBox[\(v\), \(y\)]\)\>\"", ",", "Left"}], "]"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{"Dynamic", "[", 
+      RowBox[{"Plot", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          FractionBox[
+           RowBox[{"-", "9.8"}], 
+           RowBox[{"2", 
+            SuperscriptBox["v", "2"], 
+            SuperscriptBox[
+             RowBox[{"(", 
+              RowBox[{"Cos", "[", "\[Theta]", "]"}], ")"}], "2"]}]], " ", 
+          SuperscriptBox["x", "2"]}], "+", 
+         RowBox[{
+          RowBox[{"Tan", "[", "\[Theta]", "]"}], " ", "x"}]}], ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", "0", ",", 
+          FractionBox[
+           SuperscriptBox["v", "2"], "9.8"]}], "}"}], ",", 
+        RowBox[{"PlotRange", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", 
+           FractionBox[
+            SuperscriptBox["v", "2"], 
+            RowBox[{"2", " ", "9.8"}]]}], "}"}]}]}], "]"}], "]"}]}], 
+    "\[IndentingNewLine]", "}"}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.6465261257820015`*^9, 3.646526176692984*^9}, {
+   3.6465262227297125`*^9, 3.646526279682727*^9}, {3.646526468791955*^9, 
+   3.6465264889774284`*^9}, {3.646526519961109*^9, 3.6465266469108477`*^9}, {
+   3.64655218899728*^9, 3.646552237916933*^9}, {3.6465523483446417`*^9, 
+   3.6465528532776785`*^9}, {3.646552888426141*^9, 3.646552918947513*^9}, {
+   3.646552984377185*^9, 3.646552985453905*^9}, {3.646553024074686*^9, 
+   3.6465530744623156`*^9}, {3.646553112023388*^9, 3.646553303346092*^9}, {
+   3.6465533358968196`*^9, 3.6465533977841296`*^9}, {3.6465534302367907`*^9, 
+   3.646553532499053*^9}, {3.646553573226235*^9, 3.6465538210986867`*^9}, {
+   3.646553860664097*^9, 3.6465541063080616`*^9}, {3.6465541371726637`*^9, 
+   3.64655423309669*^9}, 3.6465542638041883`*^9, {3.6465542965640526`*^9, 
+   3.646554368473053*^9}, {3.646554421990774*^9, 3.646554481556534*^9}, {
+   3.6465545461166286`*^9, 3.646554570212713*^9}, {3.6465549333220825`*^9, 
+   3.6465551034336295`*^9}, {3.646555168319939*^9, 3.6465552357059207`*^9}, {
+   3.646555334847093*^9, 3.6465553480729237`*^9}, {3.646555504710475*^9, 
+   3.646555587438696*^9}, {3.646555619119841*^9, 3.646555626133524*^9}, {
+   3.6465557215472136`*^9, 3.646555723954818*^9}, {3.646703125750415*^9, 
+   3.6467032069716315`*^9}, {3.6467036991553473`*^9, 3.646703725434889*^9}, {
+   3.6467037691860948`*^9, 3.6467037806158867`*^9}, {3.646703853242365*^9, 
+   3.6467039226286073`*^9}}],
+
+Cell[BoxData[
+ DynamicModuleBox[{$CellContext`v$$ = 50, $CellContext`\[Theta]$$ = 
+  0.8953539062730911}, 
+  RowBox[{"{", 
+   RowBox[{
+    TemplateBox[{RowBox[{"{", 
+        RowBox[{
+          SliderBox[
+           Dynamic[$CellContext`v$$], {0, 100}], ",", 
+          InputFieldBox[
+           Dynamic[$CellContext`v$$]]}], "}"}],"\"v\""},
+     "Labeled",
+     DisplayFunction->(GridBox[{{
+         ItemBox[#2, DefaultBaseStyle -> "LabeledLabel"], 
+         TagBox[
+          ItemBox[
+           PaneBox[
+            TagBox[#, "SkipImageSizeLevel"], Alignment -> {Center, Baseline}, 
+            BaselinePosition -> Baseline], DefaultBaseStyle -> "Labeled"], 
+          "SkipImageSizeLevel"]}}, 
+       GridBoxAlignment -> {"Columns" -> {{Center}}, "Rows" -> {{Center}}}, 
+       AutoDelete -> False, 
+       GridBoxItemSize -> {
+        "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+       BaselinePosition -> {1, 2}]& ),
+     InterpretationFunction->(RowBox[{"Labeled", "[", 
+        RowBox[{#, ",", #2, ",", "Left"}], "]"}]& )], ",", 
+    TemplateBox[{RowBox[{"{", 
+        RowBox[{
+          SliderBox[
+           Dynamic[
+            
+            BoxForm`RemapVariable[$CellContext`\[Theta]$$, {
+             0, Rational[1, 2] Pi}], 
+            BoxForm`RemapValue[#, $CellContext`\[Theta]$$, {
+             0, Rational[1, 2] Pi}]& ], {0, 1}], ",", 
+          InputFieldBox[
+           Dynamic[$CellContext`\[Theta]$$]]}], "}"}],"\"\[Theta]\""},
+     "Labeled",
+     DisplayFunction->(GridBox[{{
+         ItemBox[#2, DefaultBaseStyle -> "LabeledLabel"], 
+         TagBox[
+          ItemBox[
+           PaneBox[
+            TagBox[#, "SkipImageSizeLevel"], Alignment -> {Center, Baseline}, 
+            BaselinePosition -> Baseline], DefaultBaseStyle -> "Labeled"], 
+          "SkipImageSizeLevel"]}}, 
+       GridBoxAlignment -> {"Columns" -> {{Center}}, "Rows" -> {{Center}}}, 
+       AutoDelete -> False, 
+       GridBoxItemSize -> {
+        "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+       BaselinePosition -> {1, 2}]& ),
+     InterpretationFunction->(RowBox[{"Labeled", "[", 
+        RowBox[{#, ",", #2, ",", "Left"}], "]"}]& )], ",", 
+    TemplateBox[{DynamicBox[
+       ToBoxes[$CellContext`v$$ Cos[$CellContext`\[Theta]$$], StandardForm]],
+      "\"\\!\\(\\*SubscriptBox[\\(v\\), \\(x\\)]\\)\""},
+     "Labeled",
+     DisplayFunction->(GridBox[{{
+         ItemBox[#2, DefaultBaseStyle -> "LabeledLabel"], 
+         TagBox[
+          ItemBox[
+           PaneBox[
+            TagBox[#, "SkipImageSizeLevel"], Alignment -> {Center, Baseline}, 
+            BaselinePosition -> Baseline], DefaultBaseStyle -> "Labeled"], 
+          "SkipImageSizeLevel"]}}, 
+       GridBoxAlignment -> {"Columns" -> {{Center}}, "Rows" -> {{Center}}}, 
+       AutoDelete -> False, 
+       GridBoxItemSize -> {
+        "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+       BaselinePosition -> {1, 2}]& ),
+     InterpretationFunction->(RowBox[{"Labeled", "[", 
+        RowBox[{#, ",", #2, ",", "Left"}], "]"}]& )], ",", 
+    TemplateBox[{DynamicBox[
+       ToBoxes[$CellContext`v$$ Sin[$CellContext`\[Theta]$$], StandardForm]],
+      "\"\\!\\(\\*SubscriptBox[\\(v\\), \\(y\\)]\\)\""},
+     "Labeled",
+     DisplayFunction->(GridBox[{{
+         ItemBox[#2, DefaultBaseStyle -> "LabeledLabel"], 
+         TagBox[
+          ItemBox[
+           PaneBox[
+            TagBox[#, "SkipImageSizeLevel"], Alignment -> {Center, Baseline}, 
+            BaselinePosition -> Baseline], DefaultBaseStyle -> "Labeled"], 
+          "SkipImageSizeLevel"]}}, 
+       GridBoxAlignment -> {"Columns" -> {{Center}}, "Rows" -> {{Center}}}, 
+       AutoDelete -> False, 
+       GridBoxItemSize -> {
+        "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+       BaselinePosition -> {1, 2}]& ),
+     InterpretationFunction->(RowBox[{"Labeled", "[", 
+        RowBox[{#, ",", #2, ",", "Left"}], "]"}]& )], ",", 
+    DynamicBox[ToBoxes[
+      Plot[((-9.8)/(2 $CellContext`v$$^2 
+         Cos[$CellContext`\[Theta]$$]^2)) $CellContext`x^2 + 
+       Tan[$CellContext`\[Theta]$$] $CellContext`x, {$CellContext`x, 
+        0, $CellContext`v$$^2/9.8}, 
+       PlotRange -> {0, $CellContext`v$$^2/(2 9.8)}], StandardForm],
+     ImageSizeCache->{180., {56., 60.}}]}], "}"}],
+  DynamicModuleValues:>{}]], "Output",
+ CellChangeTimes->{
+  3.6465539831598597`*^9, 3.6465540481702533`*^9, 3.646554107003523*^9, 
+   3.6465541389278345`*^9, {3.646554185763097*^9, 3.6465542336090326`*^9}, 
+   3.6465542642604923`*^9, {3.6465543097938833`*^9, 3.6465543690884676`*^9}, {
+   3.646554442219277*^9, 3.6465544819137726`*^9}, 3.6465545712103777`*^9, {
+   3.646555011752434*^9, 3.646555023522292*^9}, {3.6465550560660105`*^9, 
+   3.646555106855915*^9}, {3.646555168886319*^9, 3.646555191845649*^9}, 
+   3.646555237587175*^9, {3.646555339113942*^9, 3.646555349249708*^9}, {
+   3.6465555527985773`*^9, 3.6465555879260225`*^9}, 3.646555627138196*^9, 
+   3.6465557248394084`*^9, {3.6467031561897326`*^9, 3.646703186124715*^9}, {
+   3.646703702567625*^9, 3.646703726623684*^9}, 3.646703780905081*^9, {
+   3.6467038621733255`*^9, 3.6467038795519266`*^9}, {3.646703913783701*^9, 
+   3.6467039230058584`*^9}}]
+}, Open  ]]
+},
+WindowSize->{784, 801},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (July 1, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 4198, 94, 298, "Input"],
+Cell[4781, 118, 5176, 112, 236, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
